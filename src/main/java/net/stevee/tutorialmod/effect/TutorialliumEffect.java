@@ -12,7 +12,6 @@ public class TutorialliumEffect extends MobEffect {
         super(category, color);
     }
 
-    ItemStack air = new ItemStack(Items.AIR);
     @Override
     public void applyEffectTick(LivingEntity entity, int amplifier) {
 
@@ -21,14 +20,8 @@ public class TutorialliumEffect extends MobEffect {
             // Check a custom attribute or tag to determine if the effect has already been applied
             if (!player.getPersistentData().getBoolean("CustomEffectApplied")) {
                 // Apply your custom effect logic here
-                // For example, give the entity a speed
-                for (int i = 0; i < 36; i++) {
-                    boolean start = player.inventoryMenu.getSlot(i).getItem() == air;
-                    if (start);
-                    {
-                        player.inventoryMenu.setItem(i, 10, new ItemStack(Items.DIAMOND));
-                    }
-                }
+                player.inventoryMenu.setItem(0, 1, new ItemStack(Items.DIAMOND, 10));
+
 
                 // Mark the effect as applied
                 player.getPersistentData().putBoolean("CustomEffectApplied", true);
