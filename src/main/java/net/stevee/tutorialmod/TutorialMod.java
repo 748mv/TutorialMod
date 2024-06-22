@@ -1,6 +1,8 @@
 package net.stevee.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.stevee.tutorialmod.block.ModBlocks;
+import net.stevee.tutorialmod.effect.ModEffects;
 import net.stevee.tutorialmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,8 +24,11 @@ public class TutorialMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
+
+        ModEffects.EFFECTS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
