@@ -24,7 +24,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> TUTORIALLIUMEFFECT_BLOCK = registerBlock("tutorialliumeffect_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)), ModCreativeModeTab.TUTORIAL_TAB);
 
-    public static final RegistryObject<Block> TUTORIALLIUM_BLOCK = registerBlock("tutoriallium_block",
+    public static final RegistryObject<Block> TUTORIAL_HOUSE = registerBlock("tutorial_house",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)), ModCreativeModeTab.TUTORIAL_TAB);
 
 

@@ -2,5 +2,8 @@
   "item.tutorialmod.tutorial": "Tutoriallium",
   "item.tutorialmod.raw_tutorial": "Raw Tutoriallium",
 
-  "itemGroup.tutorialtab": "Tutoriallium Tutorial Tab"
+  "itemGroup.tutorialtab": "Tutoriallium Tutorial Tab",
+
+  "effect.tutorialmod.tutoriallium_effect": "The complete Tutorial ",
+  "block.tutorialmod.tutorial_house": "Tutorial House"
 }
