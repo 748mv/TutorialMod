@@ -1,9 +1,12 @@
 {
   "item.tutorialmod.tutorial": "Tutoriallium",
   "item.tutorialmod.raw_tutorial": "Raw Tutoriallium",
+  "item.tutorialmod.backpack": "Backpack",
 
   "itemGroup.tutorialtab": "Tutoriallium Tutorial Tab",
 
   "effect.tutorialmod.tutoriallium_effect": "The complete Tutorial ",
-  "block.tutorialmod.tutorial_house": "Tutorial House"
+  "block.tutorialmod.tutorial_house": "Tutorial House",
+
+  "container.backpack": "Backpack"
 }

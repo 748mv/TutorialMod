@@ -2,6 +2,7 @@ package net.stevee.tutorialmod;
 
 import com.mojang.logging.LogUtils;
 import net.stevee.tutorialmod.block.ModBlocks;
+import net.stevee.tutorialmod.container.ModContainers;
 import net.stevee.tutorialmod.effect.ModEffects;
 import net.stevee.tutorialmod.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,7 +26,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        ModContainers.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
         ModEffects.EFFECTS.register(modEventBus);
